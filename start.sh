@@ -1146,6 +1146,7 @@ launch_cluster() {
         -e NCCL_IB_GID_INDEX="$HEAD_GID" \
         -e VLLM_HOST_IP="$HEAD_IP" \
         -e SERVED_MODEL_NAME="$SERVED_MODEL_NAME" \
+        -e GLM53_FINE_GRAINED_APC="${GLM53_FINE_GRAINED_APC:-0}" \
         -e PORT="$PORT" -e TP="$TP" -e NNODES="$NNODES" \
         -e HEAD_IP="$HEAD_IP" -e MASTER_PORT="$MASTER_PORT" \
         -e QUANTIZATION="$QUANTIZATION" \
