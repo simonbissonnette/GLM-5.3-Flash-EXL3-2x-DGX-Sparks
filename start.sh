@@ -1009,6 +1009,7 @@ if [ -f /opt/glm53/patch_kpool_tail_slotmap.py ]; then
 fi
 if [ "${GLM53_FINE_GRAINED_APC:-1}" != "0" ] && [ -f /opt/glm53/patch_fine_grained_apc.py ]; then
     python3 /opt/glm53/patch_fine_grained_apc.py
+fi
 if [ -f /opt/glm53/patch_spinwait.py ]; then
     python3 /opt/glm53/patch_spinwait.py
 fi
@@ -1107,6 +1108,7 @@ if [ -f /opt/glm53/patch_kpool_tail_slotmap.py ]; then
 fi
 if [ "${GLM53_FINE_GRAINED_APC:-1}" != "0" ] && [ -f /opt/glm53/patch_fine_grained_apc.py ]; then
     python3 /opt/glm53/patch_fine_grained_apc.py
+fi
 if [ -f /opt/glm53/patch_spinwait.py ]; then
     python3 /opt/glm53/patch_spinwait.py
 fi
